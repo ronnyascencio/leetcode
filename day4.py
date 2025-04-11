@@ -2,8 +2,7 @@ from typing import List
 
 
 class Solution:
-    def removeDuplicates(self, nums: list[int]) -> int:
-        i = 0
+    def majorityElement(self, nums: List[int]) -> int:
         for num in nums:
             if i < 2 or num != nums[i - 2]:
                 print(nums[i])
