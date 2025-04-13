@@ -10,7 +10,6 @@ class Solution:
         nums[:] = (
             nums[-k:] + nums[:-k]
         )  # rotating the list values  taking the last 3 to place in front  taking as a second imput the first elements but not the last3
-        return nums
 
 
 nums = [1, 2, 3, 4, 5, 6, 7]

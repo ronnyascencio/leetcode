@@ -4,12 +4,10 @@ from typing import List
 
 
 class Solution:
-    def removeElement(self, nums: List[int], val: int) -> int:
+    def removeElement(self, nums: List[int], val: int):
         print(f"full list: {nums}")
         while val in nums:
             nums.remove(val)
-            print(f"this is found: {val}")
-        print(f"result list: {nums}")
 
 
 nums = [3, 2, 2, 3]
