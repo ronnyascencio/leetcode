@@ -6,11 +6,11 @@ class Solution:
         max_gain = 0
         min_cost = prices[0]
 
-        for price in prices[1:]:
-            if price >= min_cost:
-                max_gain = max(max_gain, price - min_cost)
-            else:
-                min_cost = min(min_cost, price)
+        for price in range(len(prices[0:])):
+            if min_cost < prices[price]:
+                max_gain += prices[price] - min_cost
+            min_cost = prices[price]
+
         return max_gain
 
 
