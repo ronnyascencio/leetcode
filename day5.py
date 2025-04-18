@@ -19,7 +19,7 @@ class Solution:
                     duplicated = repetitions  # modify the times it exist   ins sted of 1 as before  we add the times exist
                     print(f"duplicated item: {duplicated}")
                     max_item = i  # here i add  it to the max times  it exist
-                check_list.append(i)  # we found it and now we add it to the list temp
+        return check_list.append(i)  # we found it and now we add it to the list temp
 
 
 # returning the item we found that has more repetitions
